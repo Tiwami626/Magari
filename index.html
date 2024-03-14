@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isam Traders Ltd</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>ISAM TRADERS LIMITED</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <div class="search-filter">
+      <input type="text" id="searchInput" placeholder="Search cars...">
+      <select id="makeFilter">
+        <option value="">All Makes</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Subaru">Subaru</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Suzuki">Suzuki</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Honda">Honda</option>
+        <option value="Ford">Ford</option>
+        <option value="BMW">BMW</option>
+        <!-- Add more makes as needed -->
+      </select>
+      <select id="modelFilter">
+        <option value="">All Models</option>
+        <!-- Add models dynamically based on selected make -->
+      </select>
+      <button id="filterBtn">Apply Filters</button>
+    </div>
+    <div id="carList">
+      <!-- Car listings will be displayed here -->
+    </div>
+  </div>
+</main>
+<script src="scripts.js"></script>
+</body>
+</html>
